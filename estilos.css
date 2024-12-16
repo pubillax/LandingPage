@@ -1,0 +1,394 @@
+html{
+    font-size: 18px;
+    cursor: default;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+/*header*/
+#logo{
+    height: 5em;
+    width: 5em;
+}
+#inicioSecion{
+    height: 5em;
+    width: 6em;
+}
+.accesos-href{
+    margin-right: 0.3em;
+}
+header{
+    display: flex;
+    align-items: center;
+    border-bottom-color:black;
+    border-bottom-style: groove;
+    border-bottom-width: 0.1em;
+}
+header img:hover{
+    transform:scale(1.05);
+}
+header h4 {
+    color: black;    
+}
+header a{
+    text-decoration: none;
+}
+header h4:hover{
+    transform:scale(1.05);
+}
+#accesos{
+    justify-content: space-around;
+    width: 100%;
+    display: flex;
+}
+@media (max-width: 659px) {
+    header h4{
+        font-size: 0.8em;
+    }
+    #logo{
+        height: 4em;
+        width: 4em;
+    }
+    #inicioSecion{
+        height: 4em;
+        width: 5em;
+    }
+    .menu-vertical{
+        margin-left: -6vh !important;
+    }
+}
+@media (max-width: 550px) {
+    header h4{
+        font-size: 0.7em;
+    }
+    #logo{
+        height: 3.5em;
+        width: 3.5em;
+    }
+    #inicioSecion{
+        height: 3.5em;
+        width: 4.5em;
+    }
+    .menu-vertical{
+        margin-left: -6.5vh !important;
+    }
+}
+@media (max-width: 441px) {
+    header h4{
+        font-size: 0.6em;
+    }
+    #logo{
+        height: 3em;
+        width: 3em;
+    }
+    #inicioSecion{
+        height: 3em;
+        width: 4em;
+    }
+    .menu-vertical{
+        margin-left: -7vh !important;
+    }
+}
+@media (max-width: 332px) {
+    header h4{
+        font-size: 0.5em;
+    }
+    #logo{
+        height: 2.5em;
+        width: 2.5em;
+    }
+    #inicioSecion{
+        height: 2.5em;
+        width: 3.5em;
+    }
+    .menu-vertical{
+        margin-left: -7.5vh !important;
+    }
+}
+/*fin header*/
+/*footer*/
+.circulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3em;
+    height: 3em;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+.redesSociales {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+#divFooterImgRedes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#parteDosFooter{
+    justify-content: center;
+    background-color: #063978;
+    height: 2em;
+    display: grid;
+    align-content: center;
+}
+footer{
+    color: white;
+    display: grid;
+    margin-top: 1.9em;
+}
+#parteUnoFooter {
+    background-color: #0E52A4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: auto;
+    padding: 2em;
+}
+@media (max-width: 768px) {
+    #parteUnoFooter {
+        flex-direction: column;
+        align-items: center;
+    }
+    .divFooter {
+        max-width: 100% !important;
+        text-align: center;
+    }
+    #divFooterImgRedes {
+        flex-wrap: wrap;
+    }
+    header h4{
+        font-size: 0.9em;
+    }
+    #logo{
+        height: 4.5em;
+        width: 4.5em;
+    }
+    #inicioSecion{
+        height: 4.5em;
+        width: 5.5em;
+    }
+    .menu-vertical{
+        margin-left: -5.5vh !important;
+    }
+    #footer h4{
+    margin-bottom: 0.1em;
+    margin-top: 0.1em;
+}
+#footer h3{
+    height: 1em;
+    margin-top: 0.5em;
+    font-weight: bold;
+}
+.divFooter{
+    max-width: 30%;
+    display: grid;
+    align-items: center;
+    align-content: space-evenly;
+}
+.imgFooter {
+    width: 8em; /* Ajuste relativo a la pantalla */
+    max-width: 9em;
+    height: auto;
+}
+}
+#footer h4{
+    margin-bottom: 0.1em;
+    margin-top: 0.1em;
+    font-weight: Regular;
+}
+#footer h3{
+    height: 1em;
+    margin-top: 0.5em;
+}
+.divFooter{
+    max-width: 30%;
+    display: grid;
+    align-items: center;
+    align-content: space-evenly;
+}
+.imgFooter {
+    width: 8em; /* Ajuste relativo a la pantalla */
+    max-width: 9em;
+    height: auto;
+}
+/*fin footer*/
+/*landing*/
+/*seccion 1 (inicio)*/
+#Inicio {
+    position: relative; /* Permite posicionar elementos hijos */
+    background-image: url('imagenes/fondoLandingPage.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen al contenedor */
+    background-position: center; /* Centra la imagen */
+    height: 35em; /* Altura de la sección */
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* Alinea el contenido al inicio (izquierda) */
+    padding-left: 3em; /* Espacio a la izquierda */
+    padding-top: 2em;
+}
+
+#Inicio::before {
+    content: ''; /* Crea un elemento vacío */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white; /* Color blanco */
+    opacity: 0.3; /* Ajusta el nivel de transparencia */
+    z-index: 0; /* Asegura que la superposición esté detrás del texto */
+}
+
+#Inicio h1 {
+    position: relative;
+    width: 10em;
+    font-size: 5em; /* Ajusta el tamaño del texto */
+    margin: 0; /* Elimina los márgenes */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Agrega sombra al texto */
+    z-index: 1; /* Asegura que el texto esté por encima de la superposición */
+    color: black; /* Asegura que el texto sea visible */
+}
+#segundaParte {
+    background-color: white;
+    z-index: 1;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center;
+    flex-direction: column;
+    border-radius: 4em;
+    border-color: rgb(0, 51, 102);
+    border-width: 0.2em;
+    border-style: solid;
+    height: 20em; /* Asegúrate de que este valor sea adecuado para el contenido */
+}
+
+#segundaParte h5 {
+    width: 100%;
+    height: auto; /* Ajusta el alto según el contenido */
+}
+
+#segundaParte input {
+    width: 80%; /* Ajusta el tamaño de los inputs si es necesario */
+    margin: 0.5em 0; /* Agrega un margen entre los inputs */
+    height: 5em;
+    border-radius: 3em;
+    text-align: center;
+    border-style: none;
+    background-color: rgb(244, 244, 244);
+}
+#segundaParte #botonUnirse {
+    height: 3em;
+    width: 10em;
+    border-radius: 0.5em;
+    background-color:rgb(0, 86, 179);
+}
+#divTimer {
+    position: relative; /* Necesario para que z-index funcione */
+    z-index: 1;
+    display: flex;
+}
+.circuloTimer {
+    width: 0.5em;      /* Ancho del círculo */
+    height: 0.5em;     /* Alto del círculo */
+    margin-top: 1em;
+    background-color: rgb(0, 116, 217); /* Color de fondo del círculo */
+    border-radius: 50%; /* Convierte el cuadrado en un círculo */
+    display: inline-block; /* Hace que se comporte como un elemento en línea */
+}
+.circulosMedios {
+    display: flex;
+    flex-direction: column;
+}
+.rectanguloTimer {
+    width: 6em;          /* Ancho del rectángulo */
+    height: 9em;         /* Alto del rectángulo */
+    background-color: rgb(0, 116, 217); /* Color de fondo del rectángulo */
+    border-radius: 3em;
+    
+}
+@font-face {
+    font-family: 'Peany Timer';
+    src: url('fonts/peany-timer.woff2') format('woff2'), /* Para navegadores modernos */
+         url('fonts/peany-timer.woff') format('woff');   /* Compatibilidad adicional */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.timer {
+    font-size: 6em; /* Tamaño de la fuente */
+    color: white;
+    text-align: center;
+    font-family: 'Peany Timer'; /* Agrega una fuente de respaldo */    
+    justify-content: center;
+}
+/*seccion 2 (informacion)*/
+h2 {
+    text-align: center;
+    font-size: 3em;
+    margin: 0.9em 0;
+    font-weight: bold;
+
+}
+
+.contenedor-principal {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion {
+    display: flex;
+    align-items: center;
+    width: 40em;
+    justify-content: space-between;
+}
+
+h6 {
+    font-size: 0.9em;
+    max-width: 60%;
+    margin: 0;
+    font-weight: normal;
+}
+
+.imagen {
+    width: 12em;
+    height: auto;
+    border-radius: 4.5em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+/*seccion 3 (cronograma)*/
+#seccionCronograma {
+    width: 40em;
+    margin: auto;
+    justify-content: center;
+}
+
+.parteCronograma {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #0074D9;
+    padding: 0.2em 0;
+}
+
+h6 {
+    margin: 0;
+    font-size: 0.9em;
+    color: black;
+    font-weight: normal;
+}
+
+.evento {
+    color: #B22222; /* Rojo */
+    font-size: 0.9em;
+    text-align: center;
+    font-weight: bold;
+}
