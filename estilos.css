@@ -42,70 +42,6 @@ header h4:hover{
     width: 100%;
     display: flex;
 }
-@media (max-width: 659px) {
-    header h4{
-        font-size: 0.8em;
-    }
-    #logo{
-        height: 4em;
-        width: 4em;
-    }
-    #inicioSecion{
-        height: 4em;
-        width: 5em;
-    }
-    .menu-vertical{
-        margin-left: -6vh !important;
-    }
-}
-@media (max-width: 550px) {
-    header h4{
-        font-size: 0.7em;
-    }
-    #logo{
-        height: 3.5em;
-        width: 3.5em;
-    }
-    #inicioSecion{
-        height: 3.5em;
-        width: 4.5em;
-    }
-    .menu-vertical{
-        margin-left: -6.5vh !important;
-    }
-}
-@media (max-width: 441px) {
-    header h4{
-        font-size: 0.6em;
-    }
-    #logo{
-        height: 3em;
-        width: 3em;
-    }
-    #inicioSecion{
-        height: 3em;
-        width: 4em;
-    }
-    .menu-vertical{
-        margin-left: -7vh !important;
-    }
-}
-@media (max-width: 332px) {
-    header h4{
-        font-size: 0.5em;
-    }
-    #logo{
-        height: 2.5em;
-        width: 2.5em;
-    }
-    #inicioSecion{
-        height: 2.5em;
-        width: 3.5em;
-    }
-    .menu-vertical{
-        margin-left: -7.5vh !important;
-    }
-}
 /*fin header*/
 /*footer*/
 .circulo {
@@ -384,6 +320,7 @@ h3 {
     #Inicio {
         padding: 0.5em;
         display: flex;
+        height: 40em !important;
         flex-direction: column;
     }
     #Inicio h1 {
@@ -423,7 +360,7 @@ h2 {
 
 }
 
-.contenedor-principal {
+#contenedor-principal {
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -453,9 +390,15 @@ h6 {
 }
 /*seccion 3 (cronograma)*/
 #seccionCronograma {
-    width: 40em;
+    /*width: 40em;
     margin: auto;
+    justify-content: center;*/
+    width: 80%; /* Se ajusta al ancho del contenedor */
+    margin: 2em auto;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .parteCronograma {
@@ -464,6 +407,7 @@ h6 {
     align-items: center;
     border-bottom: 1px solid #0074D9;
     padding: 0.2em 0;
+    width: 80%;
 }
 
 h6 {
@@ -478,4 +422,159 @@ h6 {
     font-size: 0.9em;
     text-align: center;
     font-weight: bold;
+}
+
+/*cosas responsive*/
+@media (max-width: 1215px) {
+    h1{
+        width: 100% !important;
+    }
+    #Inicio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50em ;
+        padding: 0 !important;
+    }
+    #Inicio #primeraParte{
+        text-align: center;
+    }
+    #Inicio #segundaParte{
+        margin-top: 2em;
+        width: 80%;
+    }
+    #divTimer{
+        justify-content: center;
+    }
+}
+@media (max-width: 770px) {
+    #Inicio{
+        height: 40em;
+    }
+}
+@media (max-width: 659px) {
+    header h4{
+        font-size: 0.8em;
+    }
+    #logo{
+        height: 4em;
+        width: 4em;
+    }
+    #inicioSecion{
+        height: 4em;
+        width: 5em;
+    }
+    .menu-vertical{
+        margin-left: -6vh !important;
+    }
+    #seccionCronograma {
+        width: 90%;
+        gap: 0.5em;
+    }
+    .parteCronograma {
+        flex-direction: column; /* Contenido en columna */
+        text-align: center;
+        padding: 1em 0;
+    }
+    .parteCronograma h6 {
+        font-size: 1em; /* Reducir tamaño */
+    }
+    .evento {
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 550px) {
+    header h4{
+        font-size: 0.7em;
+    }
+    .parteCronograma{
+        display: flex;
+        flex-direction: row;
+    }
+    #logo{
+        height: 3.5em;
+        width: 3.5em;
+    }
+    #inicioSecion{
+        height: 3.5em;
+        width: 4.5em;
+    }
+    .menu-vertical{
+        margin-left: -6.5vh !important;
+    }
+    .seccion{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    h2{
+        font-size: 1.4em;
+    }
+    #seccionAlrevez{
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width: 441px) {
+    header h4{
+        font-size: 0.6em;
+    }
+    #logo{
+        height: 3em;
+        width: 3em;
+    }
+    #inicioSecion{
+        height: 3em;
+        width: 4em;
+    }
+    .menu-vertical{
+        margin-left: -7vh !important;
+    }
+    #seccionCronograma {
+        width: 95%;
+        gap: 0.5em;
+    }
+    .parteCronograma {
+        display: flex !important;
+        flex-direction: row;
+        text-align: center;
+        padding: 0.7em 0;
+        width: 80%;
+    }
+    .parteCronograma h6 {
+        font-size: 0.9em; /* Reducir tamaño */
+    }
+    .evento {
+        font-size: 0.8em;
+    }
+}
+@media (max-width: 332px) {
+    header h4{
+        font-size: 0.5em;
+    }
+    #logo{
+        height: 2.5em;
+        width: 2.5em;
+    }
+    #inicioSecion{
+        height: 2.5em;
+        width: 3.5em;
+    }
+    .menu-vertical{
+        margin-left: -7.5vh !important;
+    }
+    #seccionCronograma {
+        width: 95%;
+        gap: 0.5em;
+    }
+    .parteCronograma {
+        flex-direction: column; /* Contenido en columna */
+        text-align: center;
+        padding: 0.7em 0;
+    }
+    .parteCronograma h6 {
+        font-size: 0.9em; /* Reducir tamaño */
+    }
+    .evento {
+        font-size: 0.8em;
+    }
 }
